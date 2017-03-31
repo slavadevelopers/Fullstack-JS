@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/slavadevelopers/Fullstack-JS/issues"
   },
-  "homepage": "https://github.com/slavadevelopers/Fullstack-JS#readme"
+  "homepage": "https://github.com/slavadevelopers/Fullstack-JS#readme",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
 }
