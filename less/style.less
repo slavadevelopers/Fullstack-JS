@@ -38,7 +38,11 @@ body {
 .logo {
 	font-family: 'Kalam', cursive;
 	font-size: 2.5rem;
-	color: #fff;
+}
+
+.logo a {
+	color: #000;
+	text-decoration: none;
 }
 
 .title-h1 {
@@ -47,6 +51,8 @@ body {
 	font-weight: 300;
 	padding-left: 6rem;
     padding-right: 6rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .row--big {
@@ -78,43 +84,45 @@ body {
 	padding-bottom: 10px;
 	text-decoration: none;
 	color: #fff;
-	background-color: #DCBB6A;
+	background-color: #009688;
 	border-radius: 5px;
 }
 
 .btn:hover {
-	background-color: lighten(#DCBB6A, 10%);
+	background-color: lighten(#009688, 10%);
 }
 
 .btn--rent {
-	background-color: #8466BE;
+	background-color: #4caf50;
 }
 
 .btn--rent:hover {
-	background-color: lighten(#8466BE, 10%);
+	background-color: lighten(#4caf50, 10%);
 }
 
 .btn--enter {
-	background-color: #785604;
+	background-color: #4caf50;
 }
 
 .btn--enter:hover {
-	background-color: lighten(#785604, 10%);
+	background-color: lighten(#4caf50, 10%);
 }
 
 .action,
 .address,
 .contacts,
-.buttons {
+.buttons,
+.title {
 	align-self: center;
 }
 .address {
-	color: #fff;
+	
 }
+
 i.icon {
 	vertical-align: middle;
 	font-size: 1.2rem;
-	color: #200652;
+	color: #004d40;
 }
 
 .social {
@@ -125,22 +133,41 @@ i.icon {
 	display: inline-block;
 	text-decoration: none;
 	margin-right: 1rem;
+
+	&:last-child {
+		margin-right: 0px;
+	}
 }
 
 .social-btn i {
 	font-size: 2rem;
+	color: #00796b;
 }
 
 .social-btn:hover i {
-	color: lighten(#200652, 10%);
+	color: lighten(#00796b, 10%);
 }
 
 .footer__row {
-    border-top: 1px solid #b8860b;
-    background-color: #dcbb6a
+    border-top: 1px solid #004d40;
 }
 
 .header__row {
-	border-bottom: 1px solid #37137e;
-	background-color: #8466Be
+	border-bottom: 1px solid #004d40;
+}
+
+
+
+
+
+
+.action__tel {
+	font-size: 1.6rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.flat {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
