@@ -14,6 +14,10 @@ body {
     height: 100%;
     min-width: 320px; 
 }
+a {
+	text-decoration: none;
+	color: #000;
+}
 
 .header {
 	margin-right: 1rem;
@@ -38,6 +42,16 @@ body {
 .logo {
 	font-family: 'Kalam', cursive;
 	font-size: 2.5rem;
+}
+
+.logo--footer {
+	font-size: 1.25rem;
+}
+
+.copyright {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.7rem;
+    margin-bottom: 0.7rem;
 }
 
 .logo a {
@@ -112,17 +126,12 @@ body {
 .address,
 .contacts,
 .buttons,
-.title {
+.title,
+.flat__tel {
 	align-self: center;
 }
 .address {
 	
-}
-
-i.icon {
-	vertical-align: middle;
-	font-size: 1.2rem;
-	color: #004d40;
 }
 
 .social {
@@ -168,6 +177,88 @@ i.icon {
 }
 
 .flat {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 1.4rem;
+	margin-bottom: 1.4rem;
+	border: 0.1rem solid #004d40;
+	position: relative;
+	&__info {
+		margin-bottom: 1rem;
+    	margin-top: 1rem;
+	}
+	&__title {
+		padding-left: 3.4rem;
+		padding-right: 3.4rem;
+	    margin-top: 1rem;
+	    margin-bottom: 1rem;
+	}
+	&__title-link {
+	    font-size: 1.3rem;
+	    font-weight: 300;
+	    text-decoration: none;
+	    color: #000;
+	}
+	&__tel {
+		padding-left: 4.4rem;
+		font-size: 2rem;
+	}
+	&__btn {
+		padding-right: 4.4rem;
+	}
+}
+
+
+
+
+.siema__slide {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 10rem;
+}
+
+.siema__slide img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.siema__prev {
+	position: absolute;
+	left: 0px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(200, 247, 197, 0.2);
+    width: 3rem;
+    cursor: pointer;
+    transition: background-color .5s ease-in;
+    &:hover {
+    	background-color: rgba(200, 247, 197, 0.7);
+    	transition: background-color .5s ease-in;
+    }
+    i {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+    }
+}
+
+.siema__next {
+	position: absolute;
+	right: 0px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(200, 247, 197, 0.2);
+    width: 3rem;
+    cursor: pointer;
+    transition: background-color .5s ease-in;
+    &:hover {
+    	background-color: rgba(200, 247, 197, 0.7);
+    	transition: background-color .5s ease-in;
+    }
+    i {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+    }
 }

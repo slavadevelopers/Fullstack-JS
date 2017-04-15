@@ -12,10 +12,12 @@ Siema.prototype.addArrows = function() {
   // make buttons & append them inside Siema's container
   this.prevArrow = document.createElement('span');
   this.nextArrow = document.createElement('span');
-  this.prevArrow.textContent = 'previous slide';
-  this.nextArrow.textContent = 'next slide';
-  this.selector.appendChild(this.prevArrow)
-  this.selector.appendChild(this.nextArrow)
+  this.prevArrow.className = "siema__prev";
+  this.nextArrow.className = "siema__next";
+  this.prevArrow.innerHTML = '<i class="icon r-circle-left"></i>';
+  this.nextArrow.innerHTML = '<i class="icon r-circle-right"></i>';
+  this.selector.appendChild(this.prevArrow);
+  this.selector.appendChild(this.nextArrow);
   
   // event handlers on buttons
   this.prevArrow.addEventListener('click', () => this.prev());
